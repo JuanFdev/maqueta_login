@@ -1,5 +1,9 @@
+
 body {
     font-family: Arial, sans-serif;
+    width: 1440px;
+    height: 1190px;
+    margin: 0 auto;
 }
 
 header {
@@ -37,7 +41,7 @@ button.claim-button {
     padding-bottom: 12px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 16px;
     position: relative;
@@ -48,21 +52,53 @@ button.claim-button {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .container {
     display: flex;
 }
 
-.left-column {
-    background-color: #f2f2f2;
-    flex-grow: 1;
-    padding: 20px;
+.backgroundleft,
+.backgroudright {
+    height: 936px;
+    width: 50%; /* Cada elemento ocupará el 50% del contenedor */
 }
 
-.right-column {
-    background-color: #007bff;
-    flex-grow: 1;
-    padding: 20px;
-    color: #fff;
+.backgroundleft {
+    background-color: #f5f5f5;
 }
+
+.backgroudright {
+    background-image:url(./img/Group\ 87.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1; /* Asegura que esté sobre los elementos grises y azules */
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form label, .login-form input {
+    width: 100%;
+}
+
+
