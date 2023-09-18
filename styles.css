@@ -78,13 +78,16 @@ button.claim-button {
 .login-form {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 35%;
+    height: 580px;
+    width: 790px;
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     z-index: 1; /* Asegura que esté sobre los elementos grises y azules */
+    margin-top: 300px;
 }
 
 .login-form h2 {
@@ -101,4 +104,46 @@ button.claim-button {
     width: 100%;
 }
 
+.claim-button-login{
+    background-color: #0070b9;
+    height: 48px;
+    width: 637px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    border-style: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.flogin{
+    height: 418px;
+    width:637px;
+    align-content: center;
+}
+
+.login-form label, .login-form input {
+    width: 100%;
+    margin-left: 24px;
+    height: 48px;
+    width: 637px;
+
+}
 
